@@ -1,18 +1,19 @@
 // src/components/Navbar/Navbar.js
+
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './Navbar.module.css';
 
 const links = [
-  { to: '/', label: 'Home' },
-  { to: '/about', label: 'About' },
-  { to: '/research', label: 'Research Areas' },
+  { to: '/',           label: 'Home' },
+  { to: '/about',      label: 'About' },
+  { to: '/research',   label: 'Research Areas' },
   { to: '/publications', label: 'Publications' },
-  { to: '/people', label: 'People' },
-  { to: '/news', label: 'News & Events' },
+  { to: '/people',     label: 'People' },
+  { to: '/news',       label: 'News & Events' },
   { to: '/collaborators', label: 'Collaborators' },
-  { to: '/join', label: 'Join Us' },
-  { to: '/contact', label: 'Contact' }
+  { to: '/join',       label: 'Join Us' },
+  { to: '/contact',    label: 'Contact' }
 ];
 
 export default function Navbar() {
@@ -38,8 +39,10 @@ export default function Navbar() {
           <li key={link.to} onClick={() => setIsOpen(false)}>
             <NavLink
               to={link.to}
-              className={({ isActive }) => (isActive ? styles.active : '')}
               end
+              className={({ isActive }) =>
+                isActive ? styles.active : undefined
+              }
             >
               {link.label}
             </NavLink>
