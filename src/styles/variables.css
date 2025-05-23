@@ -1,0 +1,9 @@
+/* // ------------------------
+// src/styles/variables.css
+// ------------------------ */
+:root {
+  --color-primary: #0D1B2A;
+  --color-secondary: #E0A458;
+  --font-heading: 'Merriweather', serif;
+  --font-body: 'Inter', sans-serif;
+}
