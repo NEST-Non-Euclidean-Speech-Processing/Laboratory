@@ -1,78 +1,48 @@
 // src/pages/Contact/Contact.js
 
-import React, { useState } from 'react';
+import React from 'react';
+import { FaEnvelope, FaLinkedin } from 'react-icons/fa';
 import styles from './Contact.module.css';
 
+import janePhoto from '../../assets/images/NEST-logo.jpg';
+import johnPhoto from '../../assets/images/NEST-logo.jpg';
+import alicePhoto from '../../assets/images/NEST-logo.jpg';
+
 export default function Contact() {
-  const [form, setForm] = useState({ name: '', email: '', message: '' });
-  const [status, setStatus] = useState('');
-
-  const handleChange = (e) => {
-    setForm(prev => ({ ...prev, [e.target.name]: e.target.value }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus('Sending…');
-    // TODO: integrate with your API endpoint
-    try {
-      // await api.post('/contact', form);
-      setStatus('Thank you! We’ll be in touch soon.');
-      setForm({ name: '', email: '', message: '' });
-    } catch {
-      setStatus('Oops—something went wrong.');
-    }
-  };
-
   return (
     <section className={styles.container}>
-      <h1 className={styles.title}>Contact</h1>
-      <p className={styles.text}>
-        Questions? Collaboration inquiries? Please complete the form below, and we’ll respond promptly.
-      </p>
+      <h1 className={styles.title}>Lab Contacts</h1>
+      <div className={styles.layout}>
+        {/* Top Center Person */}
+        <figure className={`${styles.person} ${styles.top}`}>
+          <img src={johnPhoto} alt="Dr. John Smith" className={styles.photo} />
+          <figcaption className={styles.name}>Orchid chetia phukan</figcaption>
+          <div className={styles.links}>
+            <a href="mailto:john.smith@nestlab.edu" title="Email John"><FaEnvelope /></a>
+            <a href="https://www.linkedin.com/in/john-smith" target="_blank" rel="noopener noreferrer" title="John's LinkedIn"><FaLinkedin /></a>
+          </div>
+        </figure>
 
-      <form className={styles.form} onSubmit={handleSubmit}>
-        <label className={styles.label}>
-          Name
-          <input
-            className={styles.input}
-            name="name"
-            value={form.name}
-            onChange={handleChange}
-            required
-          />
-        </label>
+        {/* Bottom Left Person */}
+        <figure className={`${styles.person} ${styles.left}`}>
+          <img src={janePhoto} alt="Dr. Jane Doe" className={styles.photo} />
+          <figcaption className={styles.name}>Akthar</figcaption>
+          <div className={styles.links}>
+            <a href="mailto:jane.doe@nestlab.edu" title="Email Jane"><FaEnvelope /></a>
+            <a href="https://www.linkedin.com/in/jane-doe" target="_blank" rel="noopener noreferrer" title="Jane's LinkedIn"><FaLinkedin /></a>
+          </div>
+        </figure>
 
-        <label className={styles.label}>
-          Email
-          <input
-            className={styles.input}
-            type="email"
-            name="email"
-            value={form.email}
-            onChange={handleChange}
-            required
-          />
-        </label>
-
-        <label className={styles.label}>
-          Message
-          <textarea
-            className={styles.textarea}
-            name="message"
-            rows="5"
-            value={form.message}
-            onChange={handleChange}
-            required
-          />
-        </label>
-
-        <button type="submit" className={styles.button}>
-          Send Message
-        </button>
-      </form>
-
-      {status && <p className={styles.status}>{status}</p>}
+        {/* Bottom Right Person */}
+        <figure className={`${styles.person} ${styles.right}`}>
+          <img src={alicePhoto} alt="Ms. Alice Brown" className={styles.photo} />
+          <figcaption className={styles.name}>Girish .</figcaption>
+          <div className={styles.links}>
+            <a href="mailto:alice.brown@nestlab.edu" title="Email Alice"><FaEnvelope /></a>
+            <a href="https://www.linkedin.com/in/alice-brown" target="_blank" rel="noopener noreferrer" title="Alice's LinkedIn"><FaLinkedin /></a>
+          </div>
+        </figure>
+      </div>
     </section>
   );
 }

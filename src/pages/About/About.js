@@ -6,7 +6,7 @@ import styles from './About.module.css';
 export default function About() {
   return (
     <section className={styles.container}>
-      <h1 className={styles.title}>About NEST Lab</h1>
+      <h1 className={styles.title}>About N.E.S.T</h1>
 
       <div className={styles.section}>
         <h2 className={styles.heading}>Our Mission</h2>
@@ -21,13 +21,10 @@ export default function About() {
       <div className={styles.section}>
         <h2 className={styles.heading}>History & Vision</h2>
         <p className={styles.text}>
-          Founded in 2024, NEST Lab emerged from a collaboration between the Departments of
-          Computer Science and Mathematics at Veer Bahadur Singh Purvanchal University. We
-          envision a future where geometric insights unlock next-generation speech technologies
-          for healthcare, education, and accessibility.
+          Founded in 2025, NEST Lab is dedicated to research at the intersection of speech, health, and education. We explore diverse fields in speech processing, with an emphasis on real-world impact and interdisciplinary collaboration.
         </p>
       </div>
-
+{/* 
       <div className={styles.section}>
         <h2 className={styles.heading}>Principal Investigator</h2>
         <div className={styles.piProfile}>
@@ -46,7 +43,7 @@ export default function About() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

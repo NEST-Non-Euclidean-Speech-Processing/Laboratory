@@ -1,18 +1,74 @@
 /* src/pages/Publications/Publications.module.css */
 
 .container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 3rem 1rem;
+  background: #f7f9fc;
+  border-radius: 8px;
 }
 
 .title {
   font-family: var(--font-heading);
-  font-size: 2.25rem;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .text {
-  font-size: 1rem;
+  font-size: 1.125rem;
+  color: #444;
   margin-bottom: 2rem;
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.paperLink {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.paperLink:hover {
+  text-decoration: underline;
+}
+
+.venue {
+  font-size: 0.95rem;
+  color: #666;
+  margin-top: 0.25rem;
+}
+
+.github {
+  font-size: 1.5rem;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.github:hover {
+  color: var(--primary);
+  transform: scale(1.1);
 }

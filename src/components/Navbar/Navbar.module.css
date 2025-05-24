@@ -1,4 +1,5 @@
 /* src/components/Navbar/Navbar.module.css */
+
 .navbar {
   position: relative;
   top: 20px;
@@ -12,7 +13,18 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.navLogo {
+  height: 40px;
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.logoText {
   color: #E0A458;
   font-size: 1.5rem;
   font-weight: bold;
@@ -57,25 +69,24 @@
   transition: all 0.3s ease;
 }
 
-/* Active‐state transforms */
 .barActive1 {
   transform: translateY(7.5px) rotate(45deg);
 }
+
 .barActive2 {
   opacity: 0;
 }
+
 .barActive3 {
   transform: translateY(-7.5px) rotate(-45deg);
 }
 
-/* Mobile Styles */
 @media (max-width: 1044px) {
   .hamburger {
     display: flex;
   }
 
   .navLinks {
-    /* hide by default on mobile */
     display: none;
     position: absolute;
     top: calc(100% + 10px);
@@ -85,10 +96,9 @@
     flex-direction: column;
     align-items: center;
     padding: 1rem 0;
-    z-index: 999;            /* ensure menu sits above page content */
+    z-index: 999;
   }
 
-  /* when open, show flex column */
   .navActive {
     display: flex;
   }

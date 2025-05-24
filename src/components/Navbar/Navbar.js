@@ -3,17 +3,18 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './Navbar.module.css';
+import logo from '../../assets/images/NEST-logo.jpg'; // path to your logo image
 
 const links = [
-  { to: '/',           label: 'Home' },
-  { to: '/about',      label: 'About' },
-  { to: '/research',   label: 'Research Areas' },
-  { to: '/publications', label: 'Publications' },
-  { to: '/people',     label: 'People' },
-  { to: '/news',       label: 'News & Events' },
+  { to: '/',            label: 'Home' },
+  { to: '/about',       label: 'About' },
+  { to: '/research',    label: 'Research Areas' },
+  { to: '/publications',label: 'NEST Publications' },
+  { to: '/people',      label: 'People' },
+  { to: '/news',        label: 'News & Events' },
   { to: '/collaborators', label: 'Collaborators' },
-  { to: '/join',       label: 'Join Us' },
-  { to: '/contact',    label: 'Contact' }
+  { to: '/join',        label: 'Join Us' },
+  { to: '/contact',     label: 'Contact' }
 ];
 
 export default function Navbar() {
@@ -22,7 +23,10 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>NEST Lab</div>
+      <div className={styles.brand}>
+        <img src={logo} alt="NEST Lab Logo" className={styles.navLogo} />
+        <span className={styles.logoText}>N.E.S.T</span>
+      </div>
 
       <button
         className={styles.hamburger}
