@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/Laboratory/static/css/main.2f486377.css",
-    "main.js": "/Laboratory/static/js/main.aba71cf5.js",
+    "main.css": "/Laboratory/static/css/main.ba14f29d.css",
+    "main.js": "/Laboratory/static/js/main.e7e0809b.js",
     "static/js/584.ae76ba92.chunk.js": "/Laboratory/static/js/584.ae76ba92.chunk.js",
+    "static/media/Don.png": "/Laboratory/static/media/Don.32ec662e0444fcde1ee9.png",
+    "static/media/akthar.png": "/Laboratory/static/media/akthar.3e2c5094e114fc34e1e9.png",
+    "static/media/Girish.jpg": "/Laboratory/static/media/Girish.38e6e1902b3ff0ffad84.jpg",
     "static/media/NEST-logo.jpg": "/Laboratory/static/media/NEST-logo.85331967b82e74ce8fe6.jpg",
     "index.html": "/Laboratory/index.html",
-    "main.2f486377.css.map": "/Laboratory/static/css/main.2f486377.css.map",
-    "main.aba71cf5.js.map": "/Laboratory/static/js/main.aba71cf5.js.map",
+    "main.ba14f29d.css.map": "/Laboratory/static/css/main.ba14f29d.css.map",
+    "main.e7e0809b.js.map": "/Laboratory/static/js/main.e7e0809b.js.map",
     "584.ae76ba92.chunk.js.map": "/Laboratory/static/js/584.ae76ba92.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f486377.css",
-    "static/js/main.aba71cf5.js"
+    "static/css/main.ba14f29d.css",
+    "static/js/main.e7e0809b.js"
   ]
 }
