@@ -7,7 +7,7 @@ import { FaGithub } from 'react-icons/fa';
 // Example data; replace with real publications
 const publications = [
   {
-    title: 'MiCuNet: Fine-Grained Cross-Lingual Traceback of Emotion and Manipulation Sources in Synthetic Speech',
+    title: 'MiCuNetwork: Fine-Grained Cross-Lingual Traceback of Emotion and Manipulation Sources in Synthetic Speech',
     venue: 'ECAI 2025',
     link: 'https://doi.org/10.1000/ecai.2025.001',
     github: 'https://github.com/NEST-Lab/MiCuNet'
