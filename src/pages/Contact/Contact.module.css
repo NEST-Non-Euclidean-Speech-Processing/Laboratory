@@ -28,11 +28,11 @@
 .left { grid-area: left; }
 .right { grid-area: right; }
 
+/* Transparent cards — no border */
 .person {
-  background: #fff;
+  background: transparent;
   padding: 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -69,9 +69,8 @@
 }
 
 .links a {
-  margin: 0 0.5rem;
-  color: var(--secondary);
   font-size: 1.5rem;
+  color: var(--secondary);
   transition: color 0.2s, transform 0.2s;
 }
 
