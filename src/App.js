@@ -10,15 +10,18 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    // show splash screen for 2 seconds
     const timeout = setTimeout(() => setLoading(false), 2000);
     return () => clearTimeout(timeout);
   }, []);
 
-  return loading ? <SplashScreen /> : (
-    <Router>
-      <AppRouter />
-    </Router>
-  );
+  return loading
+    ? <SplashScreen />
+    : (
+      <Router basename={process.env.PUBLIC_URL}>
+        <AppRouter />
+      </Router>
+    );
 }
 
 export default App;
