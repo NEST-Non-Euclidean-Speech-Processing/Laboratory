@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Laboratory/static/css/main.65b781f3.css",
-    "main.js": "/Laboratory/static/js/main.e973e81d.js",
+    "main.css": "/Laboratory/static/css/main.3eac81a9.css",
+    "main.js": "/Laboratory/static/js/main.b862f011.js",
     "static/js/584.ae76ba92.chunk.js": "/Laboratory/static/js/584.ae76ba92.chunk.js",
     "static/media/NEST-logo.jpg": "/Laboratory/static/media/NEST-logo.85331967b82e74ce8fe6.jpg",
     "index.html": "/Laboratory/index.html",
-    "main.65b781f3.css.map": "/Laboratory/static/css/main.65b781f3.css.map",
-    "main.e973e81d.js.map": "/Laboratory/static/js/main.e973e81d.js.map",
+    "main.3eac81a9.css.map": "/Laboratory/static/css/main.3eac81a9.css.map",
+    "main.b862f011.js.map": "/Laboratory/static/js/main.b862f011.js.map",
     "584.ae76ba92.chunk.js.map": "/Laboratory/static/js/584.ae76ba92.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.65b781f3.css",
-    "static/js/main.e973e81d.js"
+    "static/css/main.3eac81a9.css",
+    "static/js/main.b862f011.js"
   ]
 }
