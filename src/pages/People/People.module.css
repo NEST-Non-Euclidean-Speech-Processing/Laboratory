@@ -7,7 +7,7 @@
 
 .title {
   font-family: var(--font-heading);
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   color: var(--primary);
   text-align: center;
   margin-bottom: 2rem;
@@ -18,7 +18,7 @@
 }
 
 .sectionTitle {
-  font-size: 1.75rem;
+  font-size: 2rem;
   color: var(--primary);
   margin-bottom: 1rem;
   text-align: center;
@@ -26,21 +26,19 @@
 
 .group {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* increased card size */
+  gap: 2rem;
   justify-items: center;
-}
-
-.internGroup {
-  grid-template-columns: repeat(3, minmax(180px, 1fr));
 }
 
 .card {
   background: transparent;
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 8px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
+  width: 100%;
+  max-width: 350px; /* ensure larger cards */
 }
 
 .card:hover {
@@ -49,27 +47,28 @@
 }
 
 .photo {
-  width: 120px;
-  height: 120px;
+  width: 250px;     /* increased photo size */
+  height: 250px;    /* increased photo size */
   border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 1rem;
+  object-fit: contain;  /* show entire image */
+  display: block;
+  margin: 0 auto 1rem;
 }
 
 .name {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   color: var(--primary);
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
 .role {
-  font-size: 1rem;
+  font-size: 1.125rem;
   color: #666;
 }
 
 @media (max-width: 600px) {
-  .group, .internGroup {
+  .group {
     grid-template-columns: 1fr !important;
   }
 }
